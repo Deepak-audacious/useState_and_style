@@ -15,6 +15,7 @@ const Context = () => {
   return (
     <>
       <div className={style.Registration}>
+      <h2 className={style.heading}>Reg<span className={style.spanTag}>i</span>stration Form</h2>
           <form onSubmit={handleSubmit}>
           <lable className={style.label}>FirstName</lable>
           <input type="text"
@@ -50,13 +51,16 @@ const Context = () => {
 
 
           <lable className={style.label}>Password</lable>
-          <input type="text"
+          <input type="password"
           value={password}
           className={style.input}
           onChange={(e)=>setPassword(e.target.value)}/>
           <br />
             <button type="submit" className={style.button}>Submit</button>
           </form>
+
+
+          
           
       </div>
     </>
